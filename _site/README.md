@@ -1,6 +1,6 @@
-Shelby County Democratic Party
+Cyndi Skellie For State Representative
 =============================
 
-code for Shelby County Democratic Party Website
+Code for Campaign Website
 
 Built with [Jekyll](http://jekyllrb.com)!
