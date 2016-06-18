@@ -1,0 +1,82 @@
+#volunteer-hero-image
+  +background(url(/assets/img/volunteer.jpg))
+  background-position: 0 -50%
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 30em
+  padding-top: 20em
+
+  +media($screen)
+    padding: 27em 0 2em 0
+
+#hero-text
+  color: white
+  font-size: 50px
+  font-weight: 700
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2)
+  padding: 1px 5%
+
+  +media($mobile)
+    font-size: 30px
+
+
+.volunteer-container
+  +outer-container(90%)
+  +media($screen)
+    +outer-container
+
+.volunteer-form-body
+  margin-top: 20px
+
+#title-info
+  font-size: 18px
+
+.contact-form
+  font-size: 20px
+  padding-bottom: 20px
+  +span-columns(6)
+
+  +media($screen)
+    +shift(3)
+
+  +media($tablet)
+    +span-columns(8)
+
+  +media($mobile)
+    +span-columns(4)
+
+.form-input
+  padding-bottom: 10px
+
+  textarea
+    height: 200px
+
+  input:not([type=checkbox]), textarea
+    width: 100%
+
+  ul
+    list-style: none
+
+  ul li label
+    padding-left: 10px
+
+.required-asterisk
+  color: $donate-red
+
+.form-paran
+  font-size: 15px
+  color: gray
+
+.form-checkbox
+  padding-left: 20px
+
+.form-submit
+  background-color: $donate-red
+  color: white
+  transition: background-color .15s
+  border: none
+  padding: 5px 10px
+  font-weight: 700
+
+  &:hover
+    background-color: darken($donate-red, 10%)

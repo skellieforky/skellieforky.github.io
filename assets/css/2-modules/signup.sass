@@ -1,0 +1,64 @@
+.signup
+  background-color: $secondary-blue
+  overflow: auto
+  width: 30%
+  float: left
+  margin-left: 5%
+
+  +media($tablet)
+    height: 100%
+    padding: 87px 5%
+    margin: 0
+    width: 100%
+    background-color: rgba($secondary-blue, .5)
+
+  +media($mobile)
+    height: 100%
+    padding: 114px 5%
+    margin: 0
+    width: 100%
+    background-color: rgba($secondary-blue, .5)
+
+#signup-text
+  font-size: 22px
+  padding: 5px 0
+  color: #fff
+  margin: 0
+  text-align: center
+
+  +media($tablet)
+    width: 100%
+    padding-bottom: 15px
+    text-align: center
+
+#signup-form
+  //float: right
+  font-size: 16px
+
+  +media($tablet)
+    float: none
+
+.signup-input
+
+  input[type=submit]
+    color: #fff
+    font-weight: 700
+    background-color: $donate-red
+    border: none
+    transition: background-color .15s
+
+    &:hover
+      background-color: darken($donate-red, 10%)
+      color: #fff
+
+
+  +media($tablet)
+    width: 100%
+    padding: 0 20px 15px
+    text-align: center
+
+  input
+    height: 35px
+    width: 100%
+    border: none
+    border-top: 1px solid $primary-blue

@@ -1,0 +1,66 @@
+.cta
+  +background(url(/assets/img/gallrein.jpg))
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: cover
+  padding-bottom: 3em
+
+.cta-container
+  padding: 7em 0
+  +outer-container(90%)
+
+  +media($screen)
+    +outer-container
+
+.cta-card
+  text-align: center
+  padding: 30px
+  height: 300px
+  box-shadow: 1px 1px 3px #ddd
+  font-size: 1.25em
+  background-color: white
+  margin-bottom: 20px
+  +span-columns(4)
+
+  +media($tablet)
+    +span-columns(8)
+
+  +media($mobile)
+    +span-columns(4)
+
+  .cta-body
+    height: 75%
+
+    p
+      padding-top: 10px
+
+  .cta-button
+    padding-top: 10px
+    height: 25%
+
+    input[type="submit"]
+      margin-top: 10px
+      padding: 15px
+
+  i
+    font-size: 2.5em
+
+  .cta-signup-input
+    input[type="text"], input[type="email"]
+      width: 90%
+      padding: 5px 0
+
+
+  a, input[type="submit"]
+    display: block
+    width: 90%
+
+    margin: 0 auto
+    color: white
+    font-weight: 700
+    background-color: $donate-red
+    padding: 11px
+    border: none
+
+    &:hover
+      background-color: lighten($donate-red, 10%)

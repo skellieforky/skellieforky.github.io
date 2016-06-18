@@ -1,0 +1,63 @@
+#bio-hero-image
+  +background(url(/assets/img/family.jpg))
+  background-position: top
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 30em
+  padding-top: 20em
+
+  +media($screen)
+    padding: 27em 0 2em 0
+
+#hero-text
+  color: white
+  font-size: 50px
+  font-weight: 700
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2)
+  padding: 1px 5%
+
+  +media($mobile)
+    font-size: 30px
+
+#bio-text
+  +outer-container(90%)
+  +media($screen)
+    +outer-container(45%)
+    padding: 20px 0
+    font-size: 18px
+
+#issues-hero-image
+  +background(url(/assets/img/chamber.jpg))
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 30em
+  padding-top: 20em
+
+  +media($screen)
+    padding: 27em 0 2em 0
+
+#issues-container
+  +outer-container(90%)
+  +media($screen)
+    +outer-container(60%)
+    padding: 20px 0
+    font-size: 16px
+
+.issue-area
+  padding-bottom: 20px
+
+.issue-card-header
+  color: $primary-blue
+  font-size: 20px
+  text-decoration: underline
+  font-weight: 700
+
+  +media($screen)
+    font-size: 40px
+
+.issue-card
+  padding-bottom: 5px
+
+.fa-check
+  color: $donate-red

@@ -1,0 +1,145 @@
+#hero-image
+  +background(url(/assets/img/13edit.jpg))
+  background-position: top
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 30em
+  padding: 3em 0
+
+  +media($screen)
+    padding: 20em 0
+
+// #hero-text
+//   font-size: 50px
+//   font-weight: bold
+//
+//   +media($tablet)
+//     padding: 20px 15px
+//
+//   +media($screen)
+//     +outer-container(90%)
+
+.content-container
+  +outer-container
+
+  +media($tablet)
+    padding: 8em 10px 0 10px
+
+  +media($mobile)
+    padding: 8em 10px 0 10px
+
+  +media($screen)
+    +outer-container(90%)
+    padding-top: 8em
+
+
+.page-title
+  +media($tablet)
+    padding: 0 10px
+
+.meet-cyndi
+  +outer-container(90%)
+
+  +media($screen)
+    +outer-container
+
+.meet-header
+  text-align: center
+  font-size: 30px
+  font-weight: 700
+  color: $primary-blue
+
+.meet-photo, .meet-text
+  +media($tablet)
+    +span-columns(8)
+
+  +media($mobile)
+    +span-columns(4)
+
+  +media($screen)
+    +span-columns(6)
+
+.meet-photo
+  img
+    width: 100%
+
+.meet-text a
+  color: white
+  background-color: $selection-color
+  padding: 10px 20px
+
+.home-header
+  text-align: center
+  font-size: 30px
+  font-weight: 700
+  color: $primary-blue
+
+.meet-header, .home-header
+  padding: 10px 0
+
+#home
+  +outer-container
+  +media($screen)
+    +outer-container(90%)
+
+.home-alt-text
+  font-size: 25px
+  font-weight: 700
+  padding-bottom: 20px
+
+.body-column
+	padding: 20px 10px
+
+#posts-column
+  +span-columns(4)
+
+  ul>li
+    list-style: none
+
+    h3
+      margin: 0
+
+  +media($mobile)
+    +span-columns(4)
+    padding: 10px 15px
+
+  +media($tablet)
+    +span-columns(8)
+    padding: 10px 15px
+
+.posts
+  padding: 0
+
+#read-more
+  border: 2px solid $donate-red
+  color: $donate-red
+  background-color: #fff
+  font-size: 16px
+  padding: 10px 15px
+  transition: background-color .15s, color .15s
+
+  &:hover
+    background-color: $donate-red
+    color: #fff
+
+.social-container
+  +media($screen)
+    +span-columns(8)
+  +media($tablet)
+    +span-columns(8)
+    width: 100%
+    padding-top: 20px
+
+#facebook, #twitter
+  text-align: center
+  +media($screen)
+    +span-columns(4 of 8)
+
+  +media($tablet)
+    +span-columns(4 of 8)
+
+  +media($mobile)
+    +span-columns(4)
+    text-align: center
+		padding: 10px 15px
+    width: 100%
