@@ -631,16 +631,20 @@ ul li.nav-link {
   border-top: 1px solid #0065bd; }
 
 #volunteer-hero-image {
-  background: url(/assets/img/volunteer.jpg);
-  background: url(/assets/img/volunteer.jpg);
-  background-position: 0 -50%;
+  background: url(/assets/img/volunteers2.jpg);
+  background: url(/assets/img/volunteers2.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 30em;
   padding-top: 20em; }
   @media screen and (min-width: 769px) {
     #volunteer-hero-image {
-      padding: 27em 0 2em 0; } }
+      padding: 27em 0 2em 0;
+      background-position: 0 0; } }
+  @media screen and (max-width: 600px) {
+    #volunteer-hero-image {
+      background-position: 100% 100px; } }
 
 #hero-text {
   color: white;
