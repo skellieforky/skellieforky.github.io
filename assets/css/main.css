@@ -676,6 +676,16 @@ ul li.nav-link {
 
 .volunteer-form-body {
   margin-top: 20px; }
+  .volunteer-form-body h2 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .volunteer-form-body h2:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 769px) {
+      .volunteer-form-body h2 {
+        margin-left: 25.58941%; } }
 
 #title-info {
   font-size: 18px; }
