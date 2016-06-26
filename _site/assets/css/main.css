@@ -954,6 +954,9 @@ footer {
   @media screen and (min-width: 769px) {
     #bio-hero-image {
       padding: 27em 0 2em 0; } }
+  @media screen and (max-width: 600px) {
+    #bio-hero-image {
+      background-position: 46% 0; } }
 
 #hero-text {
   color: white;
@@ -986,13 +989,16 @@ footer {
         display: table; } }
 
 #issues-hero-image {
-  background: url(/assets/img/chamber2.jpg);
-  background: url(/assets/img/chamber2.jpg);
-  background-position: center;
+  background: url(/assets/img/skelliefather.jpg);
+  background: url(/assets/img/skelliefather.jpg);
+  background-position: 0 40%;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 30em;
   padding-top: 20em; }
+  @media screen and (max-width: 600px) {
+    #issues-hero-image {
+      background-position: 30% 40%; } }
   @media screen and (min-width: 769px) {
     #issues-hero-image {
       padding: 27em 0 2em 0; } }

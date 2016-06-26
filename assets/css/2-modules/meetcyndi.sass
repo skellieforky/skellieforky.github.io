@@ -9,6 +9,9 @@
   +media($screen)
     padding: 27em 0 2em 0
 
+  +media($mobile)
+    background-position: 46% 0
+
 #hero-text
   color: white
   font-size: 50px
@@ -27,12 +30,15 @@
     font-size: 18px
 
 #issues-hero-image
-  +background(url(/assets/img/chamber2.jpg))
-  background-position: center
+  +background(url(/assets/img/skelliefather.jpg))
+  background-position: 0 40%
   background-repeat: no-repeat
   background-size: cover
   min-height: 30em
   padding-top: 20em
+
+  +media($mobile)
+    background-position: 30% 40%
 
   +media($screen)
     padding: 27em 0 2em 0
