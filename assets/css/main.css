@@ -627,34 +627,29 @@ ul li.nav-link {
 .signup-input input {
   height: 35px;
   width: 100%;
+  padding-left: 3px;
   border: none;
   border-top: 1px solid #0065bd; }
 
-#volunteer-hero-image {
-  background: url(/assets/img/volunteers2.jpg);
-  background: url(/assets/img/volunteers2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 30em;
-  padding-top: 20em; }
+.signup-split {
+  display: table; }
+  .signup-split input {
+    display: table-cell;
+    width: 50%;
+    padding: 0 3em 0 3px; }
+  .signup-split input:first-child {
+    border-right: 1px solid #0065bd; }
+
+.hero-image.volunteer-image {
+  background-image: url(/assets/img/volunteers2.jpg);
+  background-image: url(/assets/img/volunteers2.jpg);
+  background-position: center; }
   @media screen and (min-width: 769px) {
-    #volunteer-hero-image {
-      padding: 27em 0 2em 0;
+    .hero-image.volunteer-image {
       background-position: 0 0; } }
   @media screen and (max-width: 600px) {
-    #volunteer-hero-image {
+    .hero-image.volunteer-image {
       background-position: 100% 100px; } }
-
-#hero-text {
-  color: white;
-  font-size: 50px;
-  font-weight: 700;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-  padding: 1px 5%; }
-  @media screen and (max-width: 600px) {
-    #hero-text {
-      font-size: 30px; } }
 
 .volunteer-container {
   max-width: 90%;
@@ -953,30 +948,13 @@ footer {
     .cta-card a:hover, .cta-card input[type="submit"]:hover {
       background-color: #d2161d; }
 
-#bio-hero-image {
-  background: url(/assets/img/family2.jpg);
-  background: url(/assets/img/family2.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 30em;
-  padding-top: 20em; }
-  @media screen and (min-width: 769px) {
-    #bio-hero-image {
-      padding: 27em 0 2em 0; } }
+.hero-image.bio-image {
+  background-image: url(/assets/img/family2.jpg);
+  background-image: url(/assets/img/family2.jpg);
+  background-position: top; }
   @media screen and (max-width: 600px) {
-    #bio-hero-image {
+    .hero-image.bio-image {
       background-position: 46% 0; } }
-
-#hero-text {
-  color: white;
-  font-size: 50px;
-  font-weight: 700;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-  padding: 1px 5%; }
-  @media screen and (max-width: 600px) {
-    #hero-text {
-      font-size: 30px; } }
 
 #bio-text {
   max-width: 90%;
@@ -998,20 +976,13 @@ footer {
         content: "";
         display: table; } }
 
-#issues-hero-image {
-  background: url(/assets/img/skelliefather.jpg);
-  background: url(/assets/img/skelliefather.jpg);
-  background-position: 0 40%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 30em;
-  padding-top: 20em; }
+.hero-image.issues-image {
+  background-image: url(/assets/img/skelliefather.jpg);
+  background-image: url(/assets/img/skelliefather.jpg);
+  background-position: 0 40%; }
   @media screen and (max-width: 600px) {
-    #issues-hero-image {
+    .hero-image.issues-image {
       background-position: 30% 40%; } }
-  @media screen and (min-width: 769px) {
-    #issues-hero-image {
-      padding: 27em 0 2em 0; } }
 
 #issues-container {
   max-width: 90%;
@@ -1051,17 +1022,108 @@ footer {
 .fa-check {
   color: #a41117; }
 
-#hero-image {
-  background: url(/assets/img/13edit.jpg);
-  background: url(/assets/img/13edit.jpg);
-  background-position: top;
+.hero-image.endorsement-image {
+  background-image: url(/assets/img/endorseletters.jpg);
+  background-image: url(/assets/img/endorseletters.jpg);
+  background-position: 0 0; }
+  @media screen and (max-width: 600px) {
+    .hero-image.endorsement-image {
+      background-position: 0 0; } }
+
+.endorsement-container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .endorsement-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.group-list {
+  list-style: none;
+  padding: 0; }
+  @media screen and (min-width: 769px) {
+    .group-list {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      .group-list:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 601px) and (max-width: 768px) {
+    .group-list {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 100%; }
+      .group-list:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 600px) {
+    .group-list {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .group-list:last-child {
+        margin-right: 0; } }
+  .group-list li {
+    padding: 15px 0; }
+
+.group-pic {
+  width: 150px;
+  vertical-align: middle; }
+  @media screen and (max-width: 600px) {
+    .group-pic {
+      width: 100px;
+      display: block;
+      margin: 0 auto; } }
+
+.group-name {
+  font-size: 2.25em;
+  font-weight: 700;
+  padding-left: 10px;
+  display: inline; }
+  @media screen and (max-width: 600px) {
+    .group-name {
+      display: block;
+      text-align: center;
+      font-size: 1.75em;
+      padding-left: 0; } }
+
+.mobile-break {
+  display: block; }
+  @media screen and (min-width: 769px) {
+    .mobile-break {
+      display: none; } }
+
+.hero-image {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 30em;
+  padding-top: 20em; }
+  @media screen and (min-width: 769px) {
+    .hero-image {
+      padding: 27em 0 2em 0; } }
+
+.hero-image.home-image {
+  background-image: url(/assets/img/13edit.jpg);
+  background-image: url(/assets/img/13edit.jpg);
+  background-position: top;
   padding: 3em 0; }
   @media screen and (min-width: 769px) {
-    #hero-image {
+    .hero-image.home-image {
       padding: 20em 0; } }
+
+.hero-text {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  padding: 1px 5%; }
+  @media screen and (max-width: 600px) {
+    .hero-text {
+      font-size: 30px; } }
 
 .content-container {
   max-width: 85.625em;

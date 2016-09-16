@@ -1,26 +1,8 @@
-#bio-hero-image
-  +background(url(/assets/img/family2.jpg))
+.hero-image.bio-image
+  +background-image(url(/assets/img/family2.jpg))
   background-position: top
-  background-repeat: no-repeat
-  background-size: cover
-  min-height: 30em
-  padding-top: 20em
-
-  +media($screen)
-    padding: 27em 0 2em 0
-
   +media($mobile)
     background-position: 46% 0
-
-#hero-text
-  color: white
-  font-size: 50px
-  font-weight: 700
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2)
-  padding: 1px 5%
-
-  +media($mobile)
-    font-size: 30px
 
 #bio-text
   +outer-container(90%)
@@ -29,19 +11,11 @@
     padding: 20px 0
     font-size: 18px
 
-#issues-hero-image
-  +background(url(/assets/img/skelliefather.jpg))
+.hero-image.issues-image
+  +background-image(url(/assets/img/skelliefather.jpg))
   background-position: 0 40%
-  background-repeat: no-repeat
-  background-size: cover
-  min-height: 30em
-  padding-top: 20em
-
   +media($mobile)
     background-position: 30% 40%
-
-  +media($screen)
-    padding: 27em 0 2em 0
 
 #issues-container
   +outer-container(90%)
@@ -67,3 +41,53 @@
 
 .fa-check
   color: $donate-red
+
+.hero-image.endorsement-image
+  +background-image(url(/assets/img/endorseletters.jpg))
+  background-position: 0 0
+
+  +media($mobile)
+    background-position: 0 0
+
+.endorsement-container
+  +outer-container(90%)
+
+.group-list
+  list-style: none
+  padding: 0
+  +media($screen)
+    +span-columns(8)
+    +shift(2)
+
+  +media($tablet)
+    +span-columns(8)
+
+  +media($mobile)
+    +span-columns(4)
+
+  li
+    padding: 15px 0
+
+.group-pic
+  width: 150px
+  vertical-align: middle
+  +media($mobile)
+    width: 100px
+    display: block
+    margin: 0 auto
+
+.group-name
+  font-size: 2.25em
+  font-weight: 700
+  padding-left: 10px
+  display: inline
+  +media($mobile)
+    display: block
+    text-align: center
+    font-size: 1.75em
+    padding-left: 0
+
+.mobile-break
+  display:block
+  +media($screen)
+    display: none

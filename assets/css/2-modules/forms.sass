@@ -1,28 +1,10 @@
-#volunteer-hero-image
-  +background(url(/assets/img/volunteers2.jpg))
+.hero-image.volunteer-image
+  +background-image(url(/assets/img/volunteers2.jpg))
   background-position: center
-  background-repeat: no-repeat
-  background-size: cover
-  min-height: 30em
-  padding-top: 20em
-
   +media($screen)
-    padding: 27em 0 2em 0
     background-position: 0 0
-
   +media($mobile)
     background-position: 100% 100px
-
-#hero-text
-  color: white
-  font-size: 50px
-  font-weight: 700
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2)
-  padding: 1px 5%
-
-  +media($mobile)
-    font-size: 30px
-
 
 .volunteer-container
   +outer-container(90%)

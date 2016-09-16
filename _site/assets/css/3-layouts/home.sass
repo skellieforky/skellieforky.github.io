@@ -1,23 +1,28 @@
-#hero-image
-  +background(url(/assets/img/13edit.jpg))
-  background-position: top
+.hero-image
   background-repeat: no-repeat
   background-size: cover
   min-height: 30em
-  padding: 3em 0
+  padding-top: 20em
 
+  +media($screen)
+    padding: 27em 0 2em 0
+
+.hero-image.home-image
+  +background-image(url(/assets/img/13edit.jpg))
+  background-position: top
+  padding: 3em 0
   +media($screen)
     padding: 20em 0
 
-// #hero-text
-//   font-size: 50px
-//   font-weight: bold
-//
-//   +media($tablet)
-//     padding: 20px 15px
-//
-//   +media($screen)
-//     +outer-container(90%)
+.hero-text
+  color: white
+  font-size: 50px
+  font-weight: 700
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2)
+  padding: 1px 5%
+
+  +media($mobile)
+    font-size: 30px
 
 .content-container
   +outer-container

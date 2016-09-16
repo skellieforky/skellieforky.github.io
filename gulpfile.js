@@ -58,7 +58,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch('assets/js/**', ['jekyll-rebuild']);
-		gulp.watch(['index.html', 'meetcyndi.html', 'issues.html', 'news.html', 'volunteer.html', 'assets/img/*', '_data/*', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
+		gulp.watch(['index.html', 'meetcyndi.html', 'issues.html', 'news.html', 'volunteer.html', 'endorsements.html', 'assets/img/*', '_data/*', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
 });
 
 /**
