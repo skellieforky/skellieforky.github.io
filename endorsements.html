@@ -1,0 +1,48 @@
+---
+layout: default
+title: Endorsements - Cyndi Powell Skellie for State Representative
+endorsement:
+  - name: Kentucky Education PAC
+    photo: kepac.jpg
+  - name: Kentucky State AFL&#8209;CIO
+    photo: aflcio.jpeg
+  - name: The Women's Network PAC
+    photo: womensnetwork.jpg
+  - name: Great Louisville Central Labor Council
+    photo: glclc.jpg
+  - name: IUECWA Local 761
+    photo: iuecwa.jpeg
+  - name: CWA PAC
+    photo: cwapac.png
+  - name: IBEW Local 369
+    photo: ibew369.png
+  - name: UFCW Local 227
+    photo: ufcw227.png
+  - name: Teamsters Local 783
+    photo: teamsters783.jpg
+  - name: Teamsters Local 89
+    photo: teamsters89.png
+  - name: UAW Local 862
+    photo: uaw862.jpeg
+  - name: UAW CAP
+    photo: uawcap.jpg
+  - name: Carpenters Local 175
+    photo: carpenters.jpg
+---
+
+<div class="hero-image endorsement-image">
+  <div class="hero-text">Endorsements for Cyndi</div>
+</div>
+{% include socialmedia.html %}
+<div class="endorsement-container">
+  <ul class="group-list">
+    {% for group in page.endorsement %}
+      <li>
+        <img class="group-pic" src="/assets/img/endorsements/{{ group.photo }}" alt="group-photo">
+        <!-- <br class="mobile-break"> -->
+        <div class="group-name">{{ group.name }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% include cta.html %}
